@@ -12,3 +12,4 @@ C:\Users\hevi-\Desktop\Universidad\Semeste 4\Lenguajes y automatas I\Unidad 1\Pr
 C:\Users\hevi-\Desktop\Universidad\Semeste 4\Lenguajes y automatas I\Unidad 1\Prueba\obj\Debug\net8.0\Prueba.pdb
 C:\Users\hevi-\Desktop\Universidad\Semeste 4\Lenguajes y automatas I\Unidad 1\Prueba\obj\Debug\net8.0\Prueba.genruntimeconfig.cache
 C:\Users\hevi-\Desktop\Universidad\Semeste 4\Lenguajes y automatas I\Unidad 1\Prueba\obj\Debug\net8.0\ref\Prueba.dll
+C:\Users\hevi-\Desktop\Universidad\Semeste 4\Lenguajes y automatas I\Unidad 1\Prueba\obj\Debug\net8.0\Prueba.sourcelink.json

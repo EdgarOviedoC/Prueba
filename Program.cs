@@ -11,6 +11,7 @@ namespace Prueba
         {
             using (Lecturas L = new Lecturas("prueba.cpp"))
             {
+                L.Encrypt2('o');
             }
         }
     }
