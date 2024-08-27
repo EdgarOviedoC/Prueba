@@ -82,7 +82,6 @@ namespace Prueba
             char c;
             char [] vocal = {'A', 'E', 'I' ,'O', 'U', 'a', 'e', 'i', 'o', 'u'};
 
-            String vocal2 ="AEIOUaeiou";
             while(!archivo.EndOfStream)
             {
                 c = (char)archivo.Read();
@@ -97,6 +96,75 @@ namespace Prueba
                     log.Write((char)c);
                 }
             }
+        }
+
+        public int ContarLetras()
+        {
+            char c;
+            int CL = 0;
+
+            while(!archivo.EndOfStream)
+            {
+                c = (char)archivo.Read();
+
+                if (char.IsLetter(c))
+                {
+                    CL++;
+                }
+            }
+            return CL;
+        }
+
+        public int ContarDigitos()
+        {
+            char c;
+            int CN = 0;
+
+            while(!archivo.EndOfStream)
+            {
+                c = (char)archivo.Read();
+
+                if (char.IsDigit(c))
+                {
+                    CN++;
+                }
+            }
+            return CN;
+        }
+
+        public int ContarEspacios()
+        {
+            char c;
+            int CE = 0;
+
+            while(!archivo.EndOfStream)
+            {
+                c = (char)archivo.Read();
+
+                if (char.IsWhiteSpace(c))
+                {
+                    CE++;
+                }
+            }
+            return CE;
+        }
+
+        public char primerCaracter()
+        {
+            char c;
+
+            do
+            {
+                c = (char)archivo.Read();
+
+                if (char.IsAsciiLetterOrDigit(c))
+                {
+                    return c;
+                }
+            }while(!archivo.EndOfStream);
+            
+            c = 'v';
+            return c;
         }
     }
 }
