@@ -11,7 +11,7 @@ namespace Prueba
         {
             using (Lecturas L = new Lecturas("prueba.cpp"))
             {
-                Console.WriteLine((char)L.primerCaracter());
+                Console.WriteLine((string)L.PrimeraPalabra());
             }
         }
     }

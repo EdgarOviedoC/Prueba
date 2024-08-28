@@ -151,7 +151,7 @@ namespace Prueba
 
         public char primerCaracter()
         {
-            char c;
+            char c = 'v';
 
             do
             {
@@ -163,8 +163,40 @@ namespace Prueba
                 }
             }while(!archivo.EndOfStream);
             
-            c = 'v';
             return c;
         }
+
+        public char primerCaracterprofe()
+        {
+            char c;
+
+            while(char.IsWhiteSpace(c = (char)archivo.Read()) && !archivo.EndOfStream) {}
+
+            return c;
+        }
+
+        public dynamic PrimeraPalabra()
+        {
+            dynamic d = "Empty";
+            string buffer = "";
+            char c;
+
+            while (char.IsWhiteSpace(c = (char)archivo.Read()) && !archivo.EndOfStream)
+            {
+                       
+            }
+
+            if(char.IsLetter(c))
+            {
+                buffer +=c;
+                
+                while (char.IsLetter(c = (char)archivo.Read()) && !archivo.EndOfStream)
+                {
+                    buffer +=c;
+                }
+            }
+            log.WriteLine(buffer);
+            return buffer.ToString();
+        }
     }
 }
